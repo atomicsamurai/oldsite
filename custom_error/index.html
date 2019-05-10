@@ -1,5 +1,6 @@
 <html>
 <body>
+    <h2>Error</h2>
     <p id="msg"></p>
 </body>
 <script >
@@ -10,7 +11,7 @@
         return results === null ? '' : decodeURIComponent(results[1].replace(/\+/g, ' '));
     }
 
-    document.getElementById("msg").innerHTML = getUrlParameter("msg");
+    document.getElementById("msg").innerHTML = "Error: " + getUrlParameter("msg");
 </script>
 
 </html>
